@@ -1,5 +1,5 @@
 # BioThings Explorer TRAPI API
-[![Build Status](https://travis-ci.com/kevinxin90/BioThings_Explorer_TRAPI.svg?branch=master)](https://travis-ci.com/kevinxin90/BioThings_Explorer_TRAPI)
+![Test](https://github.com/biothings/BioThings_Explorer_TRAPI/workflows/Test/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/kevinxin90/BioThings_Explorer_TRAPI/badge.svg?branch=master)](https://coveralls.io/github/kevinxin90/BioThings_Explorer_TRAPI?branch=master)
 
 ## Introduction
