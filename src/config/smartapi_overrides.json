@@ -6,7 +6,7 @@
     "e3edd325c76f2992a111b43a907a4870": "https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/biolink3/dgidb/openapi.yml",
     "cc857d5b7c8b7609b5bbb38ff990bfff": "https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/biolink3/go_bp/smartapi.yaml",
     "1d288b3a3caf75d541ffaae3aab386c8": "https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/biolink3/semmeddb/smartapi.yaml",
-    "978fe380a147a8641caf72320862697b": "https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/biolink3/text_mining/smartapi.yaml",
+    "978fe380a147a8641caf72320862697b": "https://github.com/NCATS-Tangerine/translator-api-registry/blob/biolink3-textMining/text_mining/smartapi.yaml",
     "38e9e5169a72aee3659c9ddba956790d": "https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/biolink3/bindingdb/smartapi.yaml",
     "d22b657426375a5295e7da8a303b9893": "https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/biolink3/biolink/openapi.yml",
     "a7f784626a426d054885a5f33f17d3f8": "https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/biolink3/DISEASES/smartapi.yaml",
