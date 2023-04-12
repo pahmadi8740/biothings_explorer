@@ -57,7 +57,7 @@ describe("Testing v1.1 endpoints", () => {
           expect.arrayContaining([
             expect.objectContaining({
               subject: "biolink:SmallMolecule",
-              predicate: "biolink:entity_positively_regulates_entity",
+              predicate: "biolink:regulates",
               object: "biolink:Gene",
             }),
           ]),
@@ -114,9 +114,8 @@ describe("Testing v1.1 endpoints", () => {
       .expect("Content-Type", /json/)
       .then(response => {
         expect(response.body).toEqual({
-          status: "KPsNotAvailable",
-          description:
-            "Unable to load predicates: Failed to Load MetaKG: PredicatesLoadingError: Not Found - 0 operations",
+          error: "Unable to load predicates",
+          more_info: "Failed to Load MetaKG: PredicatesLoadingError: Not Found - 0 operations",
         });
       });
   });
@@ -147,10 +146,10 @@ describe("Testing v1.1 endpoints", () => {
       .expect(404)
       .expect("Content-Type", /json/)
       .then(response => {
-        expect(response.body).toHaveProperty("status", "KPsNotAvailable");
+        expect(response.body).toHaveProperty("error", "Unable to load predicates");
         expect(response.body).toHaveProperty(
-          "description",
-          "Unable to load predicates: Failed to Load MetaKG: PredicatesLoadingError: Not Found - 0 operations",
+          "more_info",
+          "Failed to Load MetaKG: PredicatesLoadingError: Not Found - 0 operations",
         );
       });
   });
@@ -430,8 +429,7 @@ describe("Testing v1.1 endpoints", () => {
       .expect(400)
       .expect("Content-Type", /json/)
       .then(response => {
-        expect(response.body).toHaveProperty("description");
-        expect(response.body.description).toContain("Your input query graph is invalid");
+        expect(response.body).toHaveProperty("error", "Your input query graph is invalid");
       });
   });
 
